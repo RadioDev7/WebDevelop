@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html class="dark-layout loaded" lang="en" data-layout="dark-layout" data-textdirection="ltr" style="--vh: 8.34px;"><!-- BEGIN: Head--><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Образовательная платформа AROKEN.RU">
+    <meta name="author" content="aroken and kodaf. team arokod.">
+    <title>База знаний | Образовательная платформа AROKEN.RU</title>
+    <link rel="apple-touch-icon" href="https://learn.aroken.ru/img/icons/logos/box-logo.png">
+    <link rel="icon" href="https://learn.aroken.ru/img/icons/logos/box-logo.png">
+    <link href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/css2.css" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/vendors.min.css">
+    <!-- END: Vendor CSS-->
+    <link rel="stylesheet" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/all.min.css">
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/colors.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/components.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/chat.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/semi-dark-layout.css">
+    <!-- BEGIN: Page CSS-->
+    <script async="" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/tag.js"></script><script src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/lodash.min.js"></script>
+    <link rel="stylesheet" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/plyr.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/page-faq.css">
+    <link rel="stylesheet" type="text/css" href="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/vertical-menu.css">
+    <!-- END: Page CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <style>
+        .pace {
+            display: none !important;
+        }
+
+        .brand-logo--new-year svg {
+            translate: 19.2% -24%;
+            scale: 1.3;
+        }
+    </style>
+    <!-- END: Custom CSS-->
+
+    <script>
+    function recursiveAnimateTitle(string) {
+        let firstLetter = string[0];
+        let title = document.querySelector('title');
+        title.innerHTML += firstLetter;
+        if (string.length > 1) {
+            setTimeout(function() {
+                recursiveAnimateTitle(string.substring(1));
+            }, 100);
+        }
+    }
+
+    function animateTitle(string) {
+        document.querySelector('title').innerHTML = "";
+        recursiveAnimateTitle(string);
+    }
+
+    animateTitle('База знаний | Образовательная платформа AROKEN.RU');
+</script><script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+                return;
+            }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+            k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(92924587, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script></head>
+<!-- END: Head-->
+<!-- Animtated Title browser-->
+
+
+<!-- Yandex.Metrika counter -->
+
+<body data-col="" data-menu="vertical-menu-modern" data-open="click" class="pace-done vertical-layout vertical-menu-modern navbar-floating footer-static menu-expanded"><div class="pace pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div><noscript>
+    <div><img src="https://mc.yandex.ru/watch/92924587" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- animated title browser-->
+<!-- BEGIN: Body-->
+
+<div class="footer2">
+    <div class="header2">
+        <img id="logo2" src="https://cdn.icon-icons.com/icons2/390/PNG/512/octopus_38183.png" alt="logo">
+        <span class="logoText">База знаний от @arokenru</span>
+    </div>
+</div>
+ 
+<style>
+.footer2 {
+    background-color: rgb(26, 26, 26);
+    width: 1440px;
+    height: 104px;
+    margin: auto;
+}
+
+.header2 {
+    width: 700px;
+    height: 100px;
+    background-color: rgb(48, 48, 48);
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+.logoText {
+    padding-left: 10px;
+}
+
+#logo2 {
+    width: 90px;
+    height: 70px;
+    padding-left: 20px;
+    filter: invert(70%);
+}
+
+
+</style>
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="fw-bolder">База знаний</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                            <h2>Полезные ссылки</h2>
+                    <div class="accordion mt-2" id="links">
+                <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-0">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links0" aria-expanded="false" aria-controls="links0">
+                                            HTML и CSS
+                                        </button>
+                                    </h2>
+                                    <div id="links0" class="accordion-collapse collapse" aria-labelledby="links0" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://github.com/xsltdev/hcdev.ru" target="_blank">Справочник по HTML и CSS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://habr.com/ru/hubs/html5/articles/" target="_blank">Тема на Хабре по HTML</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://habr.com/ru/hubs/css/articles/" target="_blank">Тема на Хабре по CSS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://html5book.ru/" target="_blank">HTML5Book</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://htmlbook.ru/" target="_blank">HTMLBook</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Основы HTML</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://webref.ru/" target="_blank">HTML и CSS референс</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://cssreference.io/" target="_blank">CSS референс</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://grid.malven.co/" target="_blank">Шпаргалка по GRID</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://flexbox.malven.co/" target="_blank">Шпаргалка по FLEX</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://autoprefixer.github.io/ru/" target="_blank">Автопрефиксер CSS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://cssgenerator.org/box-shadow-css-generator.html" target="_blank">Генерации CSS-элемента с тенью</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-1">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links1" aria-expanded="false" aria-controls="links1">
+                                            JavaScript
+                                        </button>
+                                    </h2>
+                                    <div id="links1" class="accordion-collapse collapse" aria-labelledby="links1" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript" target="_blank">MDN</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://habr.com/ru/hubs/javascript/articles/" target="_blank">Тема на Хабре</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/sorrycc/awesome-javascript" target="_blank">Awesome-javascript</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/harryheman/my-js" target="_blank">MyJS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://code.mu/ru/javascript/book/prime/" target="_blank">Основной учебник JavaScript</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-2">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links2" aria-expanded="false" aria-controls="links2">
+                                            Node js
+                                        </button>
+                                    </h2>
+                                    <div id="links2" class="accordion-collapse collapse" aria-labelledby="links2" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://github.com/xsltdev/nodejsdev.ru" target="_blank">Справочник по Node js</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-3">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links3" aria-expanded="false" aria-controls="links3">
+                                            React JS
+                                        </button>
+                                    </h2>
+                                    <div id="links3" class="accordion-collapse collapse" aria-labelledby="links3" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://github.com/xsltdev/reactdev.ru" target="_blank">Справочник по React JS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://ru.legacy.reactjs.org/" target="_blank">Документация</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://habr.com/ru/hubs/reactjs/articles/" target="_blank">Тема на Хабре</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/enaqx/awesome-react" target="_blank">Awesome-react</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://devhints.io/react" target="_blank">Cборник готового кода</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://reactcheatsheet.com/" target="_blank">Cборник готового кода</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://reactdev.ru/" target="_blank">Справочник React</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-4">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links4" aria-expanded="false" aria-controls="links4">
+                                            SQL
+                                        </button>
+                                    </h2>
+                                    <div id="links4" class="collapse accordion-collapse" aria-labelledby="links4">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://sql-academy.org/ru" target="_blank">Бесплатный курс + тренажер по SQL</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://learndb.ru/" target="_blank">Онлайн курс по SQL</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-5">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links5" aria-expanded="false" aria-controls="links5">
+                                            Полезные программы
+                                        </button>
+                                    </h2>
+                                    <div id="links5" class="collapse accordion-collapse" aria-labelledby="links5">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://code.visualstudio.com/" target="_blank">VS Code - лучшая среда разработки</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.postman.com/" target="_blank">Postman - тестирование API</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://snipit.io/" target="_blank">Организация сниппетов кода</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://kapeli.com/dash" target="_blank">Документация</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.notion.so/login" target="_blank">Notion - заметки</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-6">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links6" aria-expanded="false" aria-controls="links6">
+                                            Хостинг проектов
+                                        </button>
+                                    </h2>
+                                    <div id="links6" class="accordion-collapse collapse" aria-labelledby="links6" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://www.reg.ru/?rlink=reflink-5215873" target="_blank">REG.RU</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://timeweb.cloud/" target="_blank">Timeweb Cloud</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://vercel.com/" target="_blank">Vercel</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.heroku.com/" target="_blank">Heroku</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-7">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links7" aria-expanded="false" aria-controls="links7">
+                                            Оформление профиля на GitHub
+                                        </button>
+                                    </h2>
+                                    <div id="links7" class="collapse accordion-collapse" aria-labelledby="links7">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme" target="_blank">Коллекция классных Readme</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://shields.io/" target="_blank">Генератор кастомных бейджей</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/ryo-ma/github-profile-trophy" target="_blank">Виджет с наградами пользователя</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/anuraghazra/github-readme-stats" target="_blank">Статистика используемых языков</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/Ashutosh00710/github-readme-activity-graph" target="_blank">График вашей активности на GitHub</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards" target="_blank">Статистика вашей активности на GitHub</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://arturssmirnovs.github.io/github-profile-readme-generator/" target="_blank">Генератор Readme</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://profilinator.rishav.dev/" target="_blank">Генератор Readme</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://rahuldkjain.github.io/gh-profile-readme-generator/" target="_blank">Генератор Readme</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.profileme.dev/" target="_blank">Генератор Readme</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://readme.so/ru" target="_blank">Составление файла Readme</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-8">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links8" aria-expanded="false" aria-controls="links8">
+                                            Тренировка написания кода
+                                        </button>
+                                    </h2>
+                                    <div id="links8" class="collapse accordion-collapse" aria-labelledby="links8">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://leetcode.com/" target="_blank">LeetCode</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.codewars.com/dashboard" target="_blank">Codewars</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://coderbyte.com/" target="_blank">Coderbyte</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.hackerrank.com/" target="_blank">HackerRank</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://projecteuler.net/" target="_blank">Project Euler</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://codeforces.com/" target="_blank">Codeforces</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-9">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links9" aria-expanded="false" aria-controls="links9">
+                                            Приводим в порядок нашу Верстку
+                                        </button>
+                                    </h2>
+                                    <div id="links9" class="collapse accordion-collapse" aria-labelledby="links9">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://doka.guide/html/" target="_blank">Классная документация по HTML</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://tpverstak.ru/common-css-class-names/" target="_blank">Популярные CSS классы</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/yoksel/common-words" target="_blank">Ещё немного популярных CSS классов</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://validator.w3.org/#validate_by_uri" target="_blank">Валидация верстки</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-10">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links10" aria-expanded="false" aria-controls="links10">
+                                            Разбираемся со шрифтами
+                                        </button>
+                                    </h2>
+                                    <div id="links10" class="collapse accordion-collapse" aria-labelledby="links10">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://transfonter.org/" target="_blank">Конвертер шрифтов</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://everythingfonts.com/font-face" target="_blank">Крутецкий конвертор шрифтов в woff2 ( и не только )</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-11">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links11" aria-expanded="false" aria-controls="links11">
+                                            Прокачай свой CSS-код
+                                        </button>
+                                    </h2>
+                                    <div id="links11" class="collapse accordion-collapse" aria-labelledby="links11">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://animate.style/" target="_blank">Библиотека анимаций классических эффектов при появлении</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://ianlunn.github.io/Hover/" target="_blank">Hover эффекты</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://min-max-calculator.9elements.com/" target="_blank">Генератор CSS формулы для адаптива (очень классная вещь)</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://bennettfeely.com/clippy/" target="_blank">Сайт для построения clip-path свойства</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://caniuse.com/" target="_blank">Проверка кроссбраузерности</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-12">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links12" aria-expanded="false" aria-controls="links12">
+                                            Полезное для JS
+                                        </button>
+                                    </h2>
+                                    <div id="links12" class="collapse accordion-collapse" aria-labelledby="links12">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://learn.javascript.ru/" target="_blank">Учебник по JS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://michalsnik.github.io/aos/" target="_blank">Библиотека анимаций при скролле</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://dimsemenov.com/plugins/magnific-popup/" target="_blank">Открытие галереи по клику на картинку</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://swiperjs.com/" target="_blank">Один из лучших слайдеров. Сделан на чистом JS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://scrollmagic.io/examples/index.html" target="_blank">Анимации при скролее</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.codewars.com/?language=javascript" target="_blank">Тут ты можешь потренироваться в решении задач на JS</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://xn----7sbbaqhlkm9ah9aiq.net/news-new/animirovannaya-ikonka-gamburger.html" target="_blank">Быстрое создание бургер крестика </a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-13">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links13" aria-expanded="false" aria-controls="links13">
+                                            Великий и Ужасный WordPress
+                                        </button>
+                                    </h2>
+                                    <div id="links13" class="accordion-collapse collapse" aria-labelledby="links13" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://developer.wordpress.org/" target="_blank">Официальная документация WP</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://wp-kama.ru/" target="_blank">Документация для разработки на WP</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://prowebber.cc/" target="_blank">Веб-портал 😈</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://habr.com/ru/post/573698/" target="_blank">Оптимизация ВП (1 часть)</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://habr.com/ru/post/573750/" target="_blank">Оптимизация ВП (2 часть)</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-14">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links14" aria-expanded="false" aria-controls="links14">
+                                            А где достать иконки?
+                                        </button>
+                                    </h2>
+                                    <div id="links14" class="accordion-collapse collapse" aria-labelledby="links14" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://fontawesome.com/" target="_blank">FontAwesome</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://icon-icons.com/ru/" target="_blank">Icons-Icons</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://icomoon.io/" target="_blank">Создание иконочных шрифтов</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.figma.com/file/CxOwciVrpzE2jtBQLoR7H9/Free-Emoji-Pack-by-Paca-(Community)?node-id=0-1&amp;t=pFZILmJVU9kc1iVA-0" target="_blank">Apple эмодзи</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://feathericons.com/" target="_blank">FeatherIcons</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-15">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links15" aria-expanded="false" aria-controls="links15">
+                                            Расширения для браузера
+                                        </button>
+                                    </h2>
+                                    <div id="links15" class="accordion-collapse collapse" aria-labelledby="links15" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://chrome.google.com/webstore/detail/seo-meta-in-1-click/bjogjfinolnhfhkbipphpdlldadpnmhc" target="_blank">Расширение для оценки SEO-оптимизации на сайте</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg" target="_blank">С помощью этого расширения ты сможешь узнать, с помощью каких технологий сделан сайт</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi" target="_blank">Полезное расширение для pixel perfect верстки</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                                                            <div class="card accordion-item">
+                                    <h2 class="accordion-header" id="links-16">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" role="button" data-bs-target="#links16" aria-expanded="false" aria-controls="links16">
+                                            Общие ссылки
+                                        </button>
+                                    </h2>
+                                    <div id="links16" class="accordion-collapse collapse" aria-labelledby="links16" style="">
+                                        <div class="accordion-body">
+                                                                                            <p>
+                                                    <a href="https://codepen.io/" target="_blank">Готовый код на любой вкус</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://google.com/" target="_blank">Самая полезная вещь в работе</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://figma.com/" target="_blank">Figma</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://marketplace.visualstudio.com/items?itemName=EasyCodeAI.chatgpt-gpt4-gpt3-vscode" target="_blank">ChatGPT у тебя в VSC</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://blog.maxgraph.ru/kak-skryt-vse-upravlyayushhie-elementy-s-yandeks-karty/" target="_blank">Крутая Яндекс карта</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://roadmap.sh/frontend" target="_blank">Дорожная карта фронтендера</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://techrocks.ru/2023/01/09/10-games-for-javascript-learning/" target="_blank">10 игр для изучения JavaScript</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://proglib.io/" target="_blank">Proglib</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://tproger.ru/" target="_blank">Tproger</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://codernet.ru/" target="_blank">Учебники и статьи для Программистов</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://ru.bem.info/" target="_blank">Документация, методология БЭМ</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://ru.bem.info/" target="_blank">Создание аватара</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://github.com/ai-collection/ai-collection" target="_blank">Коллекция нейронных сетей</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://grep.app/" target="_blank">Библиотека кода github</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://metanit.com/" target="_blank">Metanit - сайт о программировании</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://libraries.io/" target="_blank">Поисковик онлайн-репозиториев</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://www.codefactor.io/" target="_blank">Cервис для автоматической проверки качества кода</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://resume.io/" target="_blank">Cервис для облегчения создания резюме</a>
+                                                </p>
+                                                                                            <p>
+                                                    <a href="https://undesign.learn.uno/" target="_blank">Коллекция инструментов для дизайна</a>
+                                                </p>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                                    </div>
+            </div>
+                <h2 class="mt-1">Шаблоны для Кворков</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/template1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Шаблон #1</h4>
+                        <button onclick="window.open('https://disk.yandex.ru/i/t9HpW-AXOeEajg', '_blank')" class="btn btn-relief-primary waves-effect mt-1 text-white" style="background-color: rgb(14, 109, 233);">
+                                PSD файл
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/hvfct0BDYg1E3g', '_blank')" class="btn btn-relief-danger waves-effect mt-1">
+                                Гайд по шаблонам
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/vR77nU2Bb5Utdw', '_blank')" class="btn btn-relief-warning waves-effect mt-1">
+                                Шапки
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/sMcVh2-dCEc4mQ', '_blank')" class="btn btn-relief-success waves-effect mt-1">
+                                Аватарка
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/sHH266mDDTrinA', '_blank')" class="btn btn-outline-dark waves-effect mt-1">Шрифты
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/template2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Шаблон #2</h4>
+                        <button onclick="window.open('https://disk.yandex.ru/i/8Y9jGSqttddcbw', '_blank')" class="btn btn-relief-primary waves-effect mt-1 text-white" style="background-color: rgb(14, 109, 233);">
+                                PSD файл
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/hvfct0BDYg1E3g', '_blank')" class="btn btn-relief-danger waves-effect mt-1">
+                                Гайд по шаблонам
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/vR77nU2Bb5Utdw', '_blank')" class="btn btn-relief-warning waves-effect mt-1">
+                                Шапки
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/sMcVh2-dCEc4mQ', '_blank')" class="btn btn-relief-success waves-effect mt-1">
+                                Аватарка
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/sHH266mDDTrinA', '_blank')" class="btn btn-outline-dark waves-effect mt-1">Шрифты
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/template3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Шаблон #3</h4>
+                        <button onclick="window.open('https://disk.yandex.ru/i/Ygf7xeuqj9ZU6g', '_blank')" class="btn btn-relief-primary waves-effect mt-1 text-white" style="background-color: rgb(14, 109, 233);">
+                                PSD файл
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/hvfct0BDYg1E3g', '_blank')" class="btn btn-relief-danger waves-effect mt-1">
+                                Гайд по шаблонам
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/vR77nU2Bb5Utdw', '_blank')" class="btn btn-relief-warning waves-effect mt-1">
+                                Шапки
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/sMcVh2-dCEc4mQ', '_blank')" class="btn btn-relief-success waves-effect mt-1">
+                                Аватарка
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/sHH266mDDTrinA', '_blank')" class="btn btn-outline-dark waves-effect mt-1">Шрифты
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/template1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Шаблон #4</h4>
+                        <button onclick="window.open('https://disk.yandex.ru/i/fBJnN7wYPRrp8g', '_blank')" class="btn btn-relief-primary waves-effect mt-1 text-white" style="background-color: rgb(14, 109, 233);">Синий
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/UGQAn_cJyh7MZA', '_blank')" class="btn btn-relief-danger waves-effect mt-1">Красный
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/BCu5jUVjclV9fw', '_blank')" class="btn btn-relief-warning waves-effect mt-1">Оранжевый
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/ichg5gl_awNryQ', '_blank')" class="btn btn-relief-success waves-effect mt-1">Зелёный
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/g0ZGepx_Q1w83A', '_blank')" class="btn btn-outline-dark waves-effect mt-1">Шрифты
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/template2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Шаблон #5</h4>
+                        <button onclick="window.open('https://disk.yandex.ru/i/SjgL81Ud7mM0_g', '_blank')" class="btn btn-relief-primary waves-effect mt-1 text-white" style="background-color: rgb(14, 109, 233);">Синий
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/XaVLoUgLKd7isw', '_blank')" class="btn btn-relief-danger waves-effect mt-1">Красный
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/IGschoDp4QlRMw', '_blank')" class="btn btn-relief-warning waves-effect mt-1">Оранжевый
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/O5Umsc5i-wP89Q', '_blank')" class="btn btn-relief-success waves-effect mt-1">Зелёный
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/g0ZGepx_Q1w83A', '_blank')" class="btn btn-outline-dark waves-effect mt-1">Шрифты
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/template3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Шаблон #6</h4>
+                        <button onclick="window.open('https://disk.yandex.ru/i/r2XfbO5LmwAOCA', '_blank')" class="btn btn-relief-primary waves-effect mt-1 text-white" style="background-color: rgb(14, 109, 233);">Синий
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/Y4OpL2BnHP9znw', '_blank')" class="btn btn-relief-danger waves-effect mt-1">Красный
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/UEiM7mAE53bTYw', '_blank')" class="btn btn-relief-warning waves-effect mt-1">Оранжевый
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/i/4ut2LD1wkjAGuA', '_blank')" class="btn btn-relief-success waves-effect mt-1">Зелёный
+                        </button>
+                        <button onclick="window.open('https://disk.yandex.ru/d/g0ZGepx_Q1w83A', '_blank')" class="btn btn-outline-dark waves-effect mt-1">Шрифты
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay" style="touch-action: pan-y; user-select: none;"></div>
+    <div class="drag-target" style="touch-action: pan-y; user-select: none;"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-dark">
+        <p class="clearfix mb-0">
+            <span class="float-md-start d-block d-md-inline-block mt-25">Разработано командой арокод</span>
+        </p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top waves-effect waves-float waves-light" type="button" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></button>
+    <!-- END: Footer-->
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/app-menu.js"></script>
+    <script src="%D0%91%D0%B0%D0%B7%D0%B0%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0%20AROKEN.RU_files/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+        <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+
+
+
+
+</body><!-- END: Body--></html>
